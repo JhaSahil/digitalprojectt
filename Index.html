@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Analytics Basics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .example {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #analytics-data {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Introduction to Web Analytics</h1>
+  <p>Web analytics is the process of analyzing the behavior of visitors to a website. It involves tracking, reviewing, and reporting data to measure web activity, including the use of a website and its components, such as webpages, images, and videos.</p>
+
+  <div class="example">
+    <h2>Example 1: Track Button Clicks</h2>
+    <p>Click the button below to see how clicks are tracked:</p>
+    <button id="click-button">Click Me!</button>
+    <p>Total Clicks: <span id="click-count">0</span></p>
+  </div>
+
+  <div class="example">
+    <h2>Example 2: Track Form Submissions</h2>
+    <p>Submit the form below to track submissions:</p>
+    <form id="sample-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p>Total Submissions: <span id="submission-count">0</span></p>
+  </div>
+
+  <div id="analytics-data">
+    <h2>Analytics Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Button Clicks</td>
+          <td id="table-click-count">0</td>
+        </tr>
+        <tr>
+          <td>Form Submissions</td>
+          <td id="table-submission-count">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
